@@ -9,18 +9,19 @@ struct Lexer {
 
 impl Lexer {
     fn new(input: String) -> Lexer {
+        // NOTE: 適当に初期化
         let mut l = Lexer {
             input: input,
             position: 0,
             read_position: 0,
-            ch: "ss".to_string(),
+            ch: "".to_string(),
         };
         l.read_char();
         l
     }
 
-    fn get_char(self, string: String, index: i32) -> String {
-        let op = string.chars().nth(index as usize);
+    fn get_char(&self, index: i32) -> String {
+        let op = self.input.chars().nth(index as usize);
         return match op {
             Some(i) => i.to_string(),
             None => "empty".to_string(),
@@ -28,7 +29,7 @@ impl Lexer {
     }
 
     fn read_char(&mut self) {
-        self.ch = self.get_char(self.input, self.read_position);
+        self.ch = self.get_char(self.read_position);
         self.position = self.read_position;
         self.read_position += 1;
     }
