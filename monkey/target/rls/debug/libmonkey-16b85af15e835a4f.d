@@ -1,1 +1,0 @@
-/Users/cloudspider/Desktop/dev/WritingAnInterpreterInGo/WritingAnInterpreterInRust/monkey/target/rls/debug/libmonkey-16b85af15e835a4f.rmeta: /Users/cloudspider/Desktop/dev/WritingAnInterpreterInGo/WritingAnInterpreterInRust/monkey/src/main.rs
