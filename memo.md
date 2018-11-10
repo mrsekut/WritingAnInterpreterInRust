@@ -1,12 +1,12 @@
 # 概要
 
-- ソースコード　 → 　トークン列　 → 　抽象構文木
+- ソ ー スコ ー ド　 → 　ト ー クン列　 → 　抽象構文木
 
 ## 字句解析
 
 - 字句解析器 Lexer
 
-### token のデータ構造
+### token のデ ー タ構造
 
 - type
 - ファイル名
@@ -22,12 +22,6 @@
 
 # Rust
 
-### use
-
-- `use self::module_a` `self`はディレクトリの`.`
-- `use super::module_a` `super`はディレクトリの`..`
-- 参考 https://keens.github.io/blog/2017/01/15/rustnomoju_runokirikata/
-
 ## 疑問
 
 - usize, char ってなんぞ ★
@@ -37,8 +31,6 @@
   - no method named 'hoge' froun for type '' in the current scope
 - impl fn の (&mut self)とは
 - キャスト
+- vec と配列
 
 ## 参考
-
-- モジュールシステム
-  - https://qiita.com/skitaoka/items/753a519d720a1ccebb0d
